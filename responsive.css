@@ -167,3 +167,44 @@
     }
 
 }
+/* Existing Media Queries */
+
+@media (max-width:1199px){
+   ...
+}
+
+@media (max-width:991px){
+   ...
+}
+
+@media (max-width:767px){
+   ...
+}
+
+@media (max-width:575px){
+   ...
+}
+
+/* ===========================
+   Hero Responsive Code
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero-stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:500px){
+
+.hero-stats{
+    grid-template-columns:1fr;
+}
+
+}
