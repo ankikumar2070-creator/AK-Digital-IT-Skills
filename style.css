@@ -1,1 +1,257 @@
+/* ===============================
+   AK Digital IT Skills
+   style.css
+================================= */
 
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===============================
+   Header
+================================= */
+
+header{
+    background:#0d6efd;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd54f;
+}
+
+/* ===============================
+Hero Section
+================================= */
+
+.hero{
+    background:linear-gradient(rgba(13,110,253,.85),rgba(13,110,253,.85)),
+    url("../images/hero.jpg") center/cover no-repeat;
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#fff;
+    color:#0d6efd;
+    padding:14px 34px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffd54f;
+    color:#000;
+}
+
+/* ===============================
+Section
+================================= */
+
+section{
+    padding:80px 0;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:45px;
+    font-size:36px;
+    color:#0d6efd;
+}
+
+/* ===============================
+Cards
+================================= */
+
+.service-box,
+.course-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+/* ===============================
+About
+================================= */
+
+.about-home{
+    text-align:center;
+}
+
+.about-home p{
+    max-width:850px;
+    margin:auto;
+}
+
+/* ===============================
+Why Choose Us
+================================= */
+
+.why{
+    background:#eef5ff;
+}
+
+.why ul{
+    max-width:700px;
+    margin:auto;
+}
+
+.why ul li{
+    background:#fff;
+    margin:15px 0;
+    padding:18px;
+    border-left:5px solid #0d6efd;
+    border-radius:8px;
+}
+
+/* ===============================
+CTA
+================================= */
+
+.cta{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    color:#fff;
+}
+
+.cta p{
+    margin-top:10px;
+}
+
+/* ===============================
+Footer
+================================= */
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:25px 0;
+}
+
+/* ===============================
+Utility
+================================= */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.mt-20{
+    margin-top:20px;
+}
+
+.mt-40{
+    margin-top:40px;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.mb-40{
+    margin-bottom:40px;
+}
